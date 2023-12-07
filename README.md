@@ -24,10 +24,6 @@
 
 **hsh** is a simple UNIX command language interpreter that reads commands from either a file or standard input and executes them.
 
-### How **hsh** works
-
-
-
 ### What I learned:
 * How a shell works and finds commands
 * Creating, forking and working with processes
