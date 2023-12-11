@@ -10,7 +10,7 @@
 
 void run_printf(int fd, char *str)
 {
-	size_t len = _strlen(str);
+	size_t len = _strnlen(str);
 	char *new_str = malloc(len + 2);
 
 	if (new_str == NULL)
