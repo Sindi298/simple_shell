@@ -33,6 +33,10 @@ int main(int ac, char **av)
 		stores = split(storec);
 		if (!stores)
 			continue;
+
+		if (my_builtin(stores[0]))
+			get_my_builtin(stores, av, &my_waitstatus, element);
+		else
 		my_waitstatus = _execute_(stores, av, element);
 	}
 	return (0);

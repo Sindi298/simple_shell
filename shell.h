@@ -20,6 +20,7 @@
 #define BUF_FLUSH -1
 
 #define DELIM " \t\n"
+
 extern char **environ;
 
 char *read_string(void);
@@ -28,7 +29,10 @@ int _execute_(char **stores, char **av, int element);
 char *_getpath_(char *string);
 char *_getenv(char *env_var);
 
-
+int my_builtin(char *string);
+void get_my_builtin(char **stores, char **av, int *my_waitstatus, int element);
+void _exitshell(char **stores, int *my_waitstatus);
+void _printenv(char **stores, int *my_waitstatus);
 
 char *_strndup(const char *s);
 int _strncmp(char *s1, char *s2);
