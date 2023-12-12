@@ -53,4 +53,6 @@ char **split(char *storec)
 	stores[k] = NULL;
 
 	return (stores);
+	freearray(stores);
+	free(stores), stores = NULL;
 }

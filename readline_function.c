@@ -16,7 +16,7 @@ char *read_string(void)
 	my_getRV = getline(&storec, &size, stdin);
 	if (my_getRV == -1)
 	{
-		free(storec), storec = NULL;
+		free(storec), free(NULL);
 		return (NULL);
 	}
 	return (storec);

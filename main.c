@@ -1,7 +1,7 @@
 #include "shell.h"
 
 /**
-  *main - simple shell main function
+  *main - shell main function
   *@ac: the count of arguments
   *@av: the argument vector
   *
@@ -13,6 +13,7 @@ int main(int ac, char **av)
 	char *storec = NULL;
 	char **stores = NULL;
 	int my_waitstatus = 0;
+	int element = 0;
 	/*declaring void variables*/
 	(void)ac;
 
@@ -27,12 +28,13 @@ int main(int ac, char **av)
 
 			return (my_waitstatus);
 		}
+		element++;
+
 		stores = split(storec);
 		if (!stores)
 			continue;
-		my_waitstatus = _execute_(stores, av);
+		my_waitstatus = _execute_(stores, av, element);
 	}
-
 	return (0);
 
 }
