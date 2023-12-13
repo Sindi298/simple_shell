@@ -34,33 +34,33 @@ void get_my_builtin(char **stores, char **av, int *my_waitstatus, int element)
 	(void) element;
 
 	if (_strncmp(stores[0], "exit") == 0)
-		_exitshell(stores, my_waitstatus);
+		_myexitshell(stores, my_waitstatus);
 
 	else if (_strncmp(stores[0], "env") == 0)
-		_printenv(stores, my_waitstatus);
+		_myprintenv(stores, my_waitstatus);
 }
 
 /**
-  *_exitshell - exits the shell
+  *_myexitshell - exits the shell
   *@stores: string to be freed on exit
   *@my_waitstatus: exit status
   *
   *Return: nothing
   */
-void _exitshell(char **stores, int *my_waitstatus)
+void _myexitshell(char **stores, int *my_waitstatus)
 {
 	freearray(stores);
 	exit(*my_waitstatus);
 }
 
 /**
-  *_printenv - prints environment variables to stdout
+  *_myprintenv - prints environment variables to stdout
   *@stores: input string printed
   *@my_waitstatus: not used, ignore
   *
   *Return: nothing
   */
-void _printenv(char **stores, int *my_waitstatus)
+void _myprintenv(char **stores, int *my_waitstatus)
 {
 	int a;
 
