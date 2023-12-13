@@ -19,7 +19,7 @@ void _printf(int fd, char *str)
 
 	_strncpy(new_str, str);
 	new_str[len + 1] = '\0';
-	
+
 	write(fd, new_str, len + 1);
 	free(new_str);
 }
