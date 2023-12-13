@@ -1,7 +1,7 @@
 #include "shell.h"
 
 /**
-  ***split - splits a string into words
+  *split - splits a string into words
   *@storec: string
   *
   *Return: pointer to array of words
