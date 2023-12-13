@@ -15,10 +15,10 @@ int _execute_(char **stores, char **av, int element)
 	pid_t my_forkRV;
 	int my_waitstatus;
 
-	my_fullstring = _getpath_(stores[0]);
+	my_fullstring = _getmypath_(stores[0]);
 	if (!my_fullstring)
 	{
-		_printerror(av[0], stores[0], element);
+		_myprinterror(av[0], stores[0], element);
 		freearray(stores);
 		return (127);
 	}
