@@ -8,7 +8,7 @@
   *
   *Return: void
   */
-void _printerror(char *title, char *string, int element)
+void _myprinterror(char *title, char *string, int element)
 {
 	char *head, note[] = ": not found\n";
 
