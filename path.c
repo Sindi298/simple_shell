@@ -7,7 +7,7 @@
   *Return: path of command if found or NULL if not found
  */
 
-char *_getpath_(char *string)
+char *_getmypath_(char *string)
 {
 	char *my_envpath;
 	char *my_fullstring;
@@ -24,7 +24,7 @@ char *_getpath_(char *string)
 			return (NULL);
 		}
 	}
-	my_envpath = _getenv("PATH");
+	my_envpath = _mygetenv("PATH");
 	if (!my_envpath)
 		return (NULL);
 	my_dir = strtok(my_envpath, ":");
