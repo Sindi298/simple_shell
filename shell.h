@@ -26,13 +26,13 @@ extern char **environ;
 char *read_string(void);
 char **split(char *storec);
 int _execute_(char **stores, char **av, int element);
-char *_getpath_(char *string);
-char *_getenv(char *env_var);
+char *_getmypath_(char *string);
+char *_mygetenv(char *env_var);
 
 int my_builtin(char *string);
 void get_my_builtin(char **stores, char **av, int *my_waitstatus, int element);
-void _exitshell(char **stores, int *my_waitstatus);
-void _printenv(char **stores, int *my_waitstatus);
+void _myexitshell(char **stores, int *my_waitstatus);
+void _myprintenv(char **stores, int *my_waitstatus);
 
 char *_strndup(const char *s);
 int _strncmp(char *s1, char *s2);
@@ -47,7 +47,7 @@ int _putchar(char ch);
 void _puts(char *str);
 int _putsfd(char *str, int fd);
 
-void _printerror(char *title, char *string, int element);
+void _myprinterror(char *title, char *string, int element);
 void _errputs(char *str);
 int _errputchar(char ch);
 int _putfd(char ch, int fd);
