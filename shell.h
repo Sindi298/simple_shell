@@ -54,8 +54,5 @@ int _putfd(char ch, int fd);
 
 char *convert_int(int num);
 
-
 void freearray(char **array);
-
-
 #endif
