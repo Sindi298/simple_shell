@@ -7,7 +7,7 @@
   *Return: environment variable value or null on error
  */
 
-char *_getenv(char *env_var)
+char *_mygetenv(char *env_var)
 {
 	char *my_temp;
 	char *my_key;
