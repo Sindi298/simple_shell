@@ -1,7 +1,7 @@
 #include "shell.h"
 
 /**
-  **convert_int - converter function
+  *convert_int - converter function
   *@num: number to convert
   *
   *Return: pointer to a string
