@@ -1,7 +1,7 @@
 #include "shell.h"
 
 /**
-  *_printerror - prints an error message
+  *_myprinterror - prints an error message
   *@title: error string to be printed
   *@string: error string to be printed
   *@element: number
