@@ -1,7 +1,7 @@
 #include "shell.h"
 
 /**
-  **_getpath_ - finds a command in the path string
+  *_getmypath_ - finds a command in the path string
   *@string: the path string
   *
   *Return: path of command if found or NULL if not found
